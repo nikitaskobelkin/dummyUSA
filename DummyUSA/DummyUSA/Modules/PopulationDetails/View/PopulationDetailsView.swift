@@ -5,6 +5,7 @@ struct PopulationDetailsView: View {
         static let slugBackgroundOpacity: CGFloat = 0.08
     }
 
+    var year: Int?
     let data: PopulationDataModel.PopulationValueModel
 
     var body: some View {
@@ -28,7 +29,14 @@ struct PopulationDetailsView: View {
             Spacer()
         }
         .padding(.all, .space300)
-        .navigationTitle(data.origin)
+        .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+private extension PopulationDetailsView {
+    var title: String {
+        guard let year else { return data.origin }
+        return "\(data.origin) (\(String(year)))"
     }
 }

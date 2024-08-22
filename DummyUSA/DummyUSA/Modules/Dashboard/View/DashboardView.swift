@@ -20,7 +20,11 @@ struct DashboardView: View {
                     // No need here lazy loading, because API without paggination and data not heavy for this
                     List(viewModel.data, id: \.self) { group in
                         NavigationLink(destination: {
-                            PopulationView(year: group.year, data: group.value)
+                            if group.isSingleValue, let record = group.value.first {
+                                PopulationDetailsView(year: group.year, data: record)
+                            } else {
+                                PopulationView(year: group.year, data: group.value)
+                            }
                         }) {
                             HStack(spacing: .space200) {
                                 Text(String(group.year))
