@@ -5,7 +5,7 @@ struct DrilldownsSelectorView: View {
 
     var body: some View {
         HStack(spacing: .space050) {
-            Text("By: ")
+            Text("\(Localization.byPreffix.localized): ")
             Picker("", selection: $selectedDrilldowns) {
                 ForEach(DataDrilldowns.allCases, id: \.self) {
                     Text($0.rawValue)

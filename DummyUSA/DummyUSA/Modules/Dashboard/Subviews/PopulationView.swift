@@ -29,7 +29,7 @@ struct PopulationView: View {
                 .searchable(text: $searchText)
             } else {
                 ScrollView {
-                    NotFoundPlaceholderView(title: "Not Found")
+                    NotFoundPlaceholderView()
                 }
                 .searchable(text: $searchText)
             }

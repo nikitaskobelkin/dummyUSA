@@ -6,9 +6,8 @@ struct PopulationDataModel: Hashable {
 
     init?(year: Int, data: [PopulationModel]) {
         guard !data.isEmpty else { return nil }
-
+        
         self.year = year
-
         value = data.compactMap {
             guard let origin = $0.nation ?? $0.state,
                   let population = $0.population

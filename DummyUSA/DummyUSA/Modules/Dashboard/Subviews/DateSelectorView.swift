@@ -5,11 +5,11 @@ struct DateSelectorView: View {
 
     var body: some View {
         HStack(spacing: .space050) {
-            Text("Period: ")
+            Text("\(Localization.periodTitle.localized): ")
             Picker("", selection: $selectedYear) {
-                Text("All time")
+                Text(Localization.allTimeLabel.localized)
                     .tag(DataYear.allTime)
-                Text("Latest")
+                Text(Localization.latestLabel.localized)
                     .tag(DataYear.latest)
                 Divider()
                 ForEach(DashboardConstants.yearsRange, id: \.self) {

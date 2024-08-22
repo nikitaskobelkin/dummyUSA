@@ -10,11 +10,12 @@ struct DashboardView: View {
             ZStack {
                 if let error = viewModel.fetchingError, !viewModel.isLoading {
                     ErrorPlaceholderView(
-                        title: "Error",
+                        title: error.title,
+                        subtitle: error.text,
                         retry: viewModel.fetch
                     )
                 } else if viewModel.data.isEmpty, !viewModel.isLoading {
-                    NotFoundPlaceholderView(title: "NotFound")
+                    NotFoundPlaceholderView()
                 } else {
                     // No need here lazy loading, because API without paggination and data not heavy for this
                     List(viewModel.data, id: \.self) { group in
@@ -37,7 +38,7 @@ struct DashboardView: View {
                     .disabled(viewModel.isLoading)
                 }
             }
-            .navigationTitle("USA Data")
+            .navigationTitle(Localization.dashboardTitle.localized)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     DateSelectorView(

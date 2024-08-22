@@ -1,12 +1,16 @@
 import SwiftUI
 
 struct PopulationDetailsView: View {
+    private enum Constants {
+        static let slugBackgroundOpacity: CGFloat = 0.08
+    }
+
     let data: PopulationDataModel.PopulationValueModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: .space200) {
             HStack(spacing: .space100) {
-                Text("Population:")
+                Text("\(Localization.populationSubtitle.localized):")
                     .font(.headingS)
                     .foregroundStyle(Color.Text.default)
                 Text("\(data.population)")
@@ -16,9 +20,9 @@ struct PopulationDetailsView: View {
             }
             if let slug = data.slug {
                 Text(slug)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.Accent.red)
                     .padding(.space050)
-                    .background(Color.Accent.red)
+                    .background(Color.Accent.red.opacity(Constants.slugBackgroundOpacity))
                     .clipShape(RoundedRectangle(cornerRadius: .space050))
             }
             Spacer()

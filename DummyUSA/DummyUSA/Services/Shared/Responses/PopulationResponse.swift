@@ -4,7 +4,7 @@ import Foundation
 
 struct PopulationResponse: Decodable {
     let data: [PopulationModel]
-    let source: [Source]
+    let source: [Source] // not used in app, can be removed from this model
 }
 
 // MARK: - State Population Model
