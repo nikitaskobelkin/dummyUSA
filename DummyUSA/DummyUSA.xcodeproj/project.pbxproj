@@ -57,6 +57,9 @@
 		8D8E78ED2C777BCF00070591 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78EC2C777BCF00070591 /* PrimaryButtonStyle.swift */; };
 		8D8E78F02C77837B00070591 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8D8E78EF2C77837B00070591 /* Localizable.xcstrings */; };
 		8D8E78F22C77838C00070591 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78F12C77838C00070591 /* Localization.swift */; };
+		8D8E78F82C778C2500070591 /* MockDashboardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78F72C778C2500070591 /* MockDashboardDataSource.swift */; };
+		8D8E78FA2C778D5400070591 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78F92C778D5400070591 /* DashboardViewModelTests.swift */; };
+		8D8E78FD2C778DBE00070591 /* DashboardTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78FC2C778DBE00070591 /* DashboardTestConstants.swift */; };
 		8DB1CB082C762CF300AD81F3 /* DummyUSAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1CB072C762CF300AD81F3 /* DummyUSAApp.swift */; };
 		8DB1CB0C2C762CF500AD81F3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1CB0B2C762CF500AD81F3 /* Colors.xcassets */; };
 		8DB1CB192C762CF600AD81F3 /* DummyUSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1CB182C762CF600AD81F3 /* DummyUSATests.swift */; };
@@ -64,13 +67,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		8DB1CB152C762CF600AD81F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8DB1CAFC2C762CF300AD81F3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DB1CB032C762CF300AD81F3;
-			remoteInfo = DummyUSA;
-		};
-		8DB1CB1F2C762CF600AD81F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8DB1CAFC2C762CF300AD81F3 /* Project object */;
 			proxyType = 1;
@@ -129,12 +125,14 @@
 		8D8E78EC2C777BCF00070591 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		8D8E78EF2C77837B00070591 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8D8E78F12C77838C00070591 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		8D8E78F72C778C2500070591 /* MockDashboardDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDashboardDataSource.swift; sourceTree = "<group>"; };
+		8D8E78F92C778D5400070591 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		8D8E78FC2C778DBE00070591 /* DashboardTestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTestConstants.swift; sourceTree = "<group>"; };
 		8DB1CB042C762CF300AD81F3 /* DummyUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB1CB072C762CF300AD81F3 /* DummyUSAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUSAApp.swift; sourceTree = "<group>"; };
 		8DB1CB0B2C762CF500AD81F3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8DB1CB142C762CF600AD81F3 /* DummyUSATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DummyUSATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB1CB182C762CF600AD81F3 /* DummyUSATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUSATests.swift; sourceTree = "<group>"; };
-		8DB1CB1E2C762CF600AD81F3 /* DummyUSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DummyUSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,13 +145,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8DB1CB112C762CF600AD81F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DB1CB1B2C762CF600AD81F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,6 +461,47 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		8D8E78F32C778B5E00070591 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78F42C778BD600070591 /* DashboardViewModelTests */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		8D8E78F42C778BD600070591 /* DashboardViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78FB2C778DB200070591 /* Shared */,
+				8D8E78F92C778D5400070591 /* DashboardViewModelTests.swift */,
+			);
+			path = DashboardViewModelTests;
+			sourceTree = "<group>";
+		};
+		8D8E78F52C778C1100070591 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78F62C778C1E00070591 /* DataSources */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		8D8E78F62C778C1E00070591 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78F72C778C2500070591 /* MockDashboardDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		8D8E78FB2C778DB200070591 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78FC2C778DBE00070591 /* DashboardTestConstants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		8DB1CAFB2C762CF300AD81F3 = {
 			isa = PBXGroup;
 			children = (
@@ -484,7 +516,6 @@
 			children = (
 				8DB1CB042C762CF300AD81F3 /* DummyUSA.app */,
 				8DB1CB142C762CF600AD81F3 /* DummyUSATests.xctest */,
-				8DB1CB1E2C762CF600AD81F3 /* DummyUSAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -504,6 +535,8 @@
 		8DB1CB172C762CF600AD81F3 /* DummyUSATests */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E78F52C778C1100070591 /* Mock */,
+				8D8E78F32C778B5E00070591 /* UnitTests */,
 				8DB1CB182C762CF600AD81F3 /* DummyUSATests.swift */,
 			);
 			path = DummyUSATests;
@@ -601,24 +634,6 @@
 			productReference = 8DB1CB142C762CF600AD81F3 /* DummyUSATests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8DB1CB1D2C762CF600AD81F3 /* DummyUSAUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8DB1CB2E2C762CF600AD81F3 /* Build configuration list for PBXNativeTarget "DummyUSAUITests" */;
-			buildPhases = (
-				8DB1CB1A2C762CF600AD81F3 /* Sources */,
-				8DB1CB1B2C762CF600AD81F3 /* Frameworks */,
-				8DB1CB1C2C762CF600AD81F3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8DB1CB202C762CF600AD81F3 /* PBXTargetDependency */,
-			);
-			name = DummyUSAUITests;
-			productName = DummyUSAUITests;
-			productReference = 8DB1CB1E2C762CF600AD81F3 /* DummyUSAUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -633,10 +648,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					8DB1CB132C762CF600AD81F3 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 8DB1CB032C762CF300AD81F3;
-					};
-					8DB1CB1D2C762CF600AD81F3 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 8DB1CB032C762CF300AD81F3;
 					};
@@ -660,7 +671,6 @@
 			targets = (
 				8DB1CB032C762CF300AD81F3 /* DummyUSA */,
 				8DB1CB132C762CF600AD81F3 /* DummyUSATests */,
-				8DB1CB1D2C762CF600AD81F3 /* DummyUSAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -677,13 +687,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8DB1CB122C762CF600AD81F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DB1CB1C2C762CF600AD81F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -752,14 +755,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8E78FD2C778DBE00070591 /* DashboardTestConstants.swift in Sources */,
+				8D8E78FA2C778D5400070591 /* DashboardViewModelTests.swift in Sources */,
 				8DB1CB192C762CF600AD81F3 /* DummyUSATests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DB1CB1A2C762CF600AD81F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8D8E78F82C778C2500070591 /* MockDashboardDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,11 +769,6 @@
 			isa = PBXTargetDependency;
 			target = 8DB1CB032C762CF300AD81F3 /* DummyUSA */;
 			targetProxy = 8DB1CB152C762CF600AD81F3 /* PBXContainerItemProxy */;
-		};
-		8DB1CB202C762CF600AD81F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DB1CB032C762CF300AD81F3 /* DummyUSA */;
-			targetProxy = 8DB1CB1F2C762CF600AD81F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -994,42 +988,6 @@
 			};
 			name = Release;
 		};
-		8DB1CB2F2C762CF600AD81F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R3L829L3V3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitaskobelkin.DummyUSAUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DummyUSA;
-			};
-			name = Debug;
-		};
-		8DB1CB302C762CF600AD81F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R3L829L3V3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitaskobelkin.DummyUSAUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DummyUSA;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1056,15 +1014,6 @@
 			buildConfigurations = (
 				8DB1CB2C2C762CF600AD81F3 /* Debug */,
 				8DB1CB2D2C762CF600AD81F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8DB1CB2E2C762CF600AD81F3 /* Build configuration list for PBXNativeTarget "DummyUSAUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8DB1CB2F2C762CF600AD81F3 /* Debug */,
-				8DB1CB302C762CF600AD81F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
