@@ -39,7 +39,10 @@ final class NetworkService: NetworkServiceProtocol {
         request: R,
         serializer: Serializer
     ) async throws -> T where T == Serializer.SerializedObject {
-        guard isConnected else { throw NetworkError.noConnection }
+        guard isConnected else {
+            throw NetworkError.noConnection
+        }
+        
         guard let request = try? createUrlRequest(request) else {
             throw NetworkError.badRequest
         }
@@ -62,11 +65,7 @@ final class NetworkService: NetworkServiceProtocol {
 
 extension NetworkService {
     func data<T: NetworkingRequest>(_ request: T) async throws -> Data? {
-        do {
-            return try await performRequest(request: request, serializer: responseSerializer)
-        } catch {
-            throw NetworkError.badRequest
-        }
+        try await performRequest(request: request, serializer: responseSerializer)
     }
 
     func json<T: NetworkingRequest>(_ request: T) async throws -> T.ResponseType {
@@ -76,6 +75,8 @@ extension NetworkService {
             }
             let object = try JSONDecoder().decode(T.ResponseType.self, from: data)
             return object
+        } catch let error as NetworkError {
+            throw error
         } catch {
             throw NetworkError.invalidJSON
         }
