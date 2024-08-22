@@ -1,5 +1,7 @@
 # Dummy USA Intro
 
+<img width="338" alt="image" src="https://github.com/user-attachments/assets/38a891f9-50e8-4693-9d10-b73dc717abd4">
+
 ## Building the App
 
 1. Clone the repository to your local machine.
