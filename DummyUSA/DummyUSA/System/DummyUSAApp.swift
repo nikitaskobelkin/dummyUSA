@@ -11,7 +11,7 @@ import SwiftUI
 struct DummyUSAApp: App {
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            DashboardView()
         }
     }
 }
