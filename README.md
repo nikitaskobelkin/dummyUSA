@@ -8,7 +8,7 @@
 2. Open the dummyUSA.xcworkspace file in Xcode.
 3. Select the appropriate target and build the app.
 
-## Features
+## Project's Scope
 
 1. Filters (year and drilldowns)
 
@@ -31,6 +31,49 @@
 - Searching by state
 - Populations details: population and slug (optional)
 - Not Found placeholder
+
+3. iPad Version
+
+| Dashboard | States Population | State Population Details | Nation Population Details |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="https://github.com/user-attachments/assets/c20f0ea4-8d26-447c-b407-247c7791480c" width="240"> | <img src="https://github.com/user-attachments/assets/ed7e4156-8273-41f1-8ae7-c9e516d8a76a" width="240"> | <img src="https://github.com/user-attachments/assets/a38cb850-996b-4f2f-90e3-d16928559a58" width="240"> | <img src="https://github.com/user-attachments/assets/94747e9d-6cc9-464c-bad3-a0814aa2e171" width="240"> |
+
+- UI and UX consistent with iPads
+
+4. Dark/Light Themes
+
+| Light | Dark |
+| ------------- | ------------- |
+| <img src="https://github.com/user-attachments/assets/e3accf48-2c2a-4c7f-b7df-ddf2245b0386" width="240"> | <img src="https://github.com/user-attachments/assets/33f0acfc-ab3b-404d-8615-b921288536be" width="240"> |
+
+5. Localization
+
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/78ddc35d-99f4-4478-81d4-4b07c088dca0">
+
+- App includes localisation for all screens and errors
+- Able to add more languages
+- Project is ready for import/export localisation with review
+
+6. Error Handling
+
+| Network Issue | Server Issue |
+| ------------- | ------------- |
+| <img src="https://github.com/user-attachments/assets/d2080af5-928f-4c24-9957-521eb8955134" width="240"> | <img src="https://github.com/user-attachments/assets/ffc34420-8c93-4a16-a7a4-ac4e9abd4554" width="240"> |
+
+- App includes localisation for all screens and errors
+- Able to add more languages
+- Project is ready for import/export localisation with review
+- Retry button will try fetch again
+
+7. Unit-testing
+
+<img width="618" alt="image" src="https://github.com/user-attachments/assets/f43d1209-660b-41b3-b76c-6f9ebed728b8">
+
+
+- Easy to integrate mock entities by Dependency approach
+- Unit-tests implemented with async/await and Combine technologies
+- All tests are completed
+- Unit-tests flexible with changing constants to test all corner-cases
 
 ## General Architecture
 
