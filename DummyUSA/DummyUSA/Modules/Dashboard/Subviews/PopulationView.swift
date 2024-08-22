@@ -6,11 +6,9 @@ struct PopulationView: View {
     let data: [PopulationDataModel.PopulationValueModel]
 
     var body: some View {
-        ZStack {
-            if let record = data.first, data.count == 1 {
-                PopulationDetailsView(data: record)
-            } else if !records.isEmpty {
-                List(records) { record in
+        List {
+            if !records.isEmpty {
+                ForEach(records) { record in
                     NavigationLink(destination: {
                         PopulationDetailsView(data: record)
                     }) {
@@ -26,14 +24,12 @@ struct PopulationView: View {
                     }
                     .buttonStyle(.plain)
                 }
-                .searchable(text: $searchText)
             } else {
-                ScrollView {
-                    NotFoundPlaceholderView()
-                }
-                .searchable(text: $searchText)
+                NotFoundPlaceholderView()
+                    .listRowBackground(Color.clear)
             }
         }
+        .searchable(text: $searchText)
         .navigationTitle(String(year))
     }
 }
