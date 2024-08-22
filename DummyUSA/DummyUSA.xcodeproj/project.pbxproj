@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D8E78562C7643BB00070591 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78552C7643BB00070591 /* NetworkService.swift */; };
 		8D8E78592C7643DC00070591 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8E78582C7643DC00070591 /* Alamofire */; };
-		8D8E785B2C7643DC00070591 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8E785A2C7643DC00070591 /* AlamofireDynamic */; };
 		8D8E785D2C76443300070591 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E785C2C76443300070591 /* NetworkServiceProtocol.swift */; };
 		8D8E78602C76455A00070591 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E785F2C76455A00070591 /* NetworkError.swift */; };
 		8D8E78642C7645A000070591 /* RequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78632C7645A000070591 /* RequestHeader.swift */; };
@@ -30,6 +29,17 @@
 		8D8E78922C765A5900070591 /* SpacingCGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78912C765A5900070591 /* SpacingCGFloat.swift */; };
 		8D8E78942C765C5200070591 /* FontsStyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78932C765C5200070591 /* FontsStyleSheet.swift */; };
 		8D8E78982C769E5300070591 /* FontSizesCGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78972C769E5300070591 /* FontSizesCGFloat.swift */; };
+		8D8E789B2C76A37600070591 /* GetPopulationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E789A2C76A37600070591 /* GetPopulationRequest.swift */; };
+		8D8E78A02C76A54400070591 /* DataMeasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E789F2C76A54400070591 /* DataMeasures.swift */; };
+		8D8E78A32C76A70000070591 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78A22C76A70000070591 /* DictionaryExtension.swift */; };
+		8D8E78A62C76A80900070591 /* PopulationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78A52C76A80900070591 /* PopulationResponse.swift */; };
+		8D8E78AA2C76A83000070591 /* GetPopulationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78A92C76A83000070591 /* GetPopulationQuery.swift */; };
+		8D8E78AC2C76A8CA00070591 /* DataDrilldowns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78AB2C76A8CA00070591 /* DataDrilldowns.swift */; };
+		8D8E78AF2C76AB5900070591 /* DashboardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78AE2C76AB5900070591 /* DashboardDataSource.swift */; };
+		8D8E78B12C76AC0300070591 /* DashboardDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78B02C76AC0300070591 /* DashboardDataSourceProtocol.swift */; };
+		8D8E78B32C76AF7600070591 /* DashboardDataSourceDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78B22C76AF7600070591 /* DashboardDataSourceDependency.swift */; };
+		8D8E78B62C76B0DF00070591 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78B52C76B0DF00070591 /* DIContainer.swift */; };
+		8D8E78B82C77459100070591 /* DataYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E78B72C77459100070591 /* DataYear.swift */; };
 		8DB1CB082C762CF300AD81F3 /* DummyUSAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1CB072C762CF300AD81F3 /* DummyUSAApp.swift */; };
 		8DB1CB0C2C762CF500AD81F3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1CB0B2C762CF500AD81F3 /* Colors.xcassets */; };
 		8DB1CB192C762CF600AD81F3 /* DummyUSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1CB182C762CF600AD81F3 /* DummyUSATests.swift */; };
@@ -74,6 +84,17 @@
 		8D8E78912C765A5900070591 /* SpacingCGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingCGFloat.swift; sourceTree = "<group>"; };
 		8D8E78932C765C5200070591 /* FontsStyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleSheet.swift; sourceTree = "<group>"; };
 		8D8E78972C769E5300070591 /* FontSizesCGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizesCGFloat.swift; sourceTree = "<group>"; };
+		8D8E789A2C76A37600070591 /* GetPopulationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopulationRequest.swift; sourceTree = "<group>"; };
+		8D8E789F2C76A54400070591 /* DataMeasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMeasures.swift; sourceTree = "<group>"; };
+		8D8E78A22C76A70000070591 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		8D8E78A52C76A80900070591 /* PopulationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationResponse.swift; sourceTree = "<group>"; };
+		8D8E78A92C76A83000070591 /* GetPopulationQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopulationQuery.swift; sourceTree = "<group>"; };
+		8D8E78AB2C76A8CA00070591 /* DataDrilldowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDrilldowns.swift; sourceTree = "<group>"; };
+		8D8E78AE2C76AB5900070591 /* DashboardDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDataSource.swift; sourceTree = "<group>"; };
+		8D8E78B02C76AC0300070591 /* DashboardDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDataSourceProtocol.swift; sourceTree = "<group>"; };
+		8D8E78B22C76AF7600070591 /* DashboardDataSourceDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDataSourceDependency.swift; sourceTree = "<group>"; };
+		8D8E78B52C76B0DF00070591 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		8D8E78B72C77459100070591 /* DataYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataYear.swift; sourceTree = "<group>"; };
 		8DB1CB042C762CF300AD81F3 /* DummyUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB1CB072C762CF300AD81F3 /* DummyUSAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUSAApp.swift; sourceTree = "<group>"; };
 		8DB1CB0B2C762CF500AD81F3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -88,7 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8E78592C7643DC00070591 /* Alamofire in Frameworks */,
-				8D8E785B2C7643DC00070591 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,7 @@
 		8D8E785E2C76455000070591 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E78A42C76A7FB00070591 /* Responses */,
 				8D8E78712C76474400070591 /* Serializers */,
 				8D8E78612C76459400070591 /* Requests */,
 				8D8E785F2C76455A00070591 /* NetworkError.swift */,
@@ -173,6 +194,7 @@
 		8D8E78802C764F1300070591 /* Instances */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E78B22C76AF7600070591 /* DashboardDataSourceDependency.swift */,
 			);
 			path = Instances;
 			sourceTree = "<group>";
@@ -223,8 +245,84 @@
 		8D8E78992C76A26900070591 /* Usage */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E78A72C76A81E00070591 /* GetPopulation */,
 			);
 			path = Usage;
+			sourceTree = "<group>";
+		};
+		8D8E789C2C76A52000070591 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E789E2C76A52D00070591 /* Shared */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		8D8E789D2C76A52600070591 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8D8E789E2C76A52D00070591 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78AB2C76A8CA00070591 /* DataDrilldowns.swift */,
+				8D8E789F2C76A54400070591 /* DataMeasures.swift */,
+				8D8E78B72C77459100070591 /* DataYear.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8D8E78A12C76A6F000070591 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78A22C76A70000070591 /* DictionaryExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D8E78A42C76A7FB00070591 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78A52C76A80900070591 /* PopulationResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		8D8E78A72C76A81E00070591 /* GetPopulation */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78A82C76A82500070591 /* Shared */,
+				8D8E789A2C76A37600070591 /* GetPopulationRequest.swift */,
+			);
+			path = GetPopulation;
+			sourceTree = "<group>";
+		};
+		8D8E78A82C76A82500070591 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78A92C76A83000070591 /* GetPopulationQuery.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8D8E78AD2C76AB4200070591 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78B02C76AC0300070591 /* DashboardDataSourceProtocol.swift */,
+				8D8E78AE2C76AB5900070591 /* DashboardDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		8D8E78B42C76B0D400070591 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E78B52C76B0DF00070591 /* DIContainer.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		8DB1CAFB2C762CF300AD81F3 = {
@@ -252,6 +350,7 @@
 				8DB1CB362C762F2A00AD81F3 /* System */,
 				8DB1CB352C762F1800AD81F3 /* Modules */,
 				8DB1CB312C762E6400AD81F3 /* Services */,
+				8D8E78AD2C76AB4200070591 /* DataSources */,
 				8DB1CB332C762E6C00AD81F3 /* Shared */,
 			);
 			path = DummyUSA;
@@ -278,6 +377,7 @@
 		8DB1CB322C762E6900AD81F3 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E78B42C76B0D400070591 /* Container */,
 				8D8E78802C764F1300070591 /* Instances */,
 				8D8E78792C764EA200070591 /* Utilities */,
 			);
@@ -287,6 +387,7 @@
 		8DB1CB332C762E6C00AD81F3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E78A12C76A6F000070591 /* Extensions */,
 				8D8E78852C7653E100070591 /* DesignSystem */,
 				8D8E78822C764F7700070591 /* Routing */,
 				8DB1CB322C762E6900AD81F3 /* Dependency */,
@@ -298,6 +399,8 @@
 		8DB1CB352C762F1800AD81F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E789D2C76A52600070591 /* Settings */,
+				8D8E789C2C76A52000070591 /* Dashboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -328,7 +431,6 @@
 			name = DummyUSA;
 			packageProductDependencies = (
 				8D8E78582C7643DC00070591 /* Alamofire */,
-				8D8E785A2C7643DC00070591 /* AlamofireDynamic */,
 			);
 			productName = DummyUSA;
 			productReference = 8DB1CB042C762CF300AD81F3 /* DummyUSA.app */;
@@ -447,18 +549,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8E78AF2C76AB5900070591 /* DashboardDataSource.swift in Sources */,
+				8D8E78B62C76B0DF00070591 /* DIContainer.swift in Sources */,
+				8D8E78AC2C76A8CA00070591 /* DataDrilldowns.swift in Sources */,
+				8D8E78AA2C76A83000070591 /* GetPopulationQuery.swift in Sources */,
 				8D8E786A2C76461900070591 /* RequestHeaderKey.swift in Sources */,
 				8D8E78682C7645E600070591 /* NetworkConstants.swift in Sources */,
+				8D8E78B12C76AC0300070591 /* DashboardDataSourceProtocol.swift in Sources */,
 				8D8E786E2C7646B100070591 /* RequestContentType.swift in Sources */,
 				8D8E78662C7645BD00070591 /* RequestDescriptor.swift in Sources */,
 				8D8E78702C7646C000070591 /* RequestAuthorisation.swift in Sources */,
 				8D8E787D2C764EE700070591 /* InjectedValues.swift in Sources */,
+				8D8E78A02C76A54400070591 /* DataMeasures.swift in Sources */,
 				8D8E785D2C76443300070591 /* NetworkServiceProtocol.swift in Sources */,
 				8D8E787B2C764ED000070591 /* DependencyPropertyWrapper.swift in Sources */,
 				8D8E787F2C764EF000070591 /* InjectionKey.swift in Sources */,
+				8D8E789B2C76A37600070591 /* GetPopulationRequest.swift in Sources */,
 				8D8E78922C765A5900070591 /* SpacingCGFloat.swift in Sources */,
 				8D8E78562C7643BB00070591 /* NetworkService.swift in Sources */,
+				8D8E78A32C76A70000070591 /* DictionaryExtension.swift in Sources */,
+				8D8E78B32C76AF7600070591 /* DashboardDataSourceDependency.swift in Sources */,
+				8D8E78B82C77459100070591 /* DataYear.swift in Sources */,
 				8DB1CB082C762CF300AD81F3 /* DummyUSAApp.swift in Sources */,
+				8D8E78A62C76A80900070591 /* PopulationResponse.swift in Sources */,
 				8D8E78642C7645A000070591 /* RequestHeader.swift in Sources */,
 				8D8E78942C765C5200070591 /* FontsStyleSheet.swift in Sources */,
 				8D8E78902C76550000070591 /* ColorsStyleSheet.swift in Sources */,
@@ -628,7 +741,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DummyUSA/Preview Content\"";
 				DEVELOPMENT_TEAM = R3L829L3V3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -657,7 +769,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DummyUSA/Preview Content\"";
 				DEVELOPMENT_TEAM = R3L829L3V3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -812,11 +923,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D8E78572C7643DC00070591 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		8D8E785A2C7643DC00070591 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8D8E78572C7643DC00070591 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
